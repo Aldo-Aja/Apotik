@@ -10,20 +10,20 @@
     <div class="container">
         <div class="row mt-3">
             <div class="col-4">
-                <h3>Edit Data Pasien</h3>
+                <h3>Edit Data Pegawai</h3>
                 <?php
                 include 'koneksi.php';
-                $panggil = $koneksi->query("SELECT * FROM pasien WHERE idPasien='$_GET[edit]'");
+                $panggil = $koneksi->query("SELECT * FROM pegawai WHERE id='$_GET[edit]'");
                 while ($row = $panggil->fetch_assoc()) {
                 ?>
                 <form action="koneksi.php" method="POST">
                     <div class="form-group">
-                        <label for="idPasien">ID Pasien</label>
-                        <input type="text" class="form-control" name="idPasien" placeholder="ID Pasien" value="<?= $row['idPasien'] ?>" readonly>
+                        <label for="id">ID Pegawai</label>
+                        <input type="text" class="form-control" name="id" placeholder="ID Pegawai" value="<?= $row['id'] ?>" readonly>
                     </div>
                     <div class="form-group">
-                        <label for="nmPasien">Nama Pasien</label>
-                        <input type="text" class="form-control" name="nmPasien" value="<?= $row['nmPasien'] ?>">
+                        <label for="Nama">Nama Pegawai</label>
+                        <input type="text" class="form-control" name="Nama" value="<?= $row['Nama'] ?>">
                     </div>
                     <div class="form-group">
                         <label for="jk">Jenis Kelamin</label>
@@ -35,8 +35,8 @@
                         </div>
                     </div>
                     <div class="form-group mt-3">
-                        <label for="alamat">Alamat</label>
-                        <textarea class="form-control" name="alamat" id="alamat" cols="5" rows="3" placeholder="Alamat"><?= $row['alamat'] ?></textarea>
+                        <label for="jabatan">Jabatan</label>
+                        <textarea class="form-control" name="jabatan" id="jabatan" cols="5" rows="3" placeholder="jabatan"><?= $row['jabatan'] ?></textarea>
                     </div>
                     <div class="form-group mt-3">
                         <input type="submit" name="simpan" value="Simpan" class="form-control btn btn-primary">

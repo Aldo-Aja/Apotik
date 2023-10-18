@@ -1,21 +1,21 @@
 <html>
 <head>
-    <title>My App | Halaman Tambah Data Pasien</title>
+    <title>My App | Halaman Tambah Data Pegawai</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
     <div class="container">
         <div class="row mt-3">
             <div class="col-4">
-                <h3>Tambah Data Pasien</h3>
+                <h3>Tambah Data Pegawai</h3>
                 <form action="koneksi.php" method="POST">
                     <div class="form-group">
-                        <label for="idpasien">ID Pasien</label>
-                        <input type="text" class="form-control" name="idpasien" placeholder="ID Pasien">
+                        <label for="id">ID Pegawai</label>
+                        <input type="text" class="form-control" name="id" placeholder="ID Pegawai">
                     </div>
                     <div class="form-group">
-                        <label for="nmpasien">Nama Pasien</label>
-                        <input type text="text" class="form-control" name="nmpasien" placeholder="Nama Pasien">
+                        <label for="Nama">Nama Pegawai</label>
+                        <input type text="text" class="form-control" name="Nama" placeholder="Nama Pegawai">
                     </div>
                     <div class="form-group">
                         <label for="jk">Jenis Kelamin</label>
@@ -27,8 +27,8 @@
                         </div>
                     </div>
                     <div class="form-group mt-3">
-                        <label for="alamat">Alamat</label>
-                        <textarea name="alamat" id="alamat" cols="5" rows="3" placeholder="Alamat" class="form-control"></textarea>
+                        <label for="jabatan">Jabatan</label>
+                        <input type text="text" class="form-control" name="Jabatan" placeholder="Jabatan">
                     </div>
                     <div class="form-group mt-3">
                         <input type="submit" name="simpan" value="Simpan" class="form-control btn btn-primary">
